@@ -48,7 +48,7 @@ def auswahl2(temp_ausw2 = 0):
     return temp_ausw2         
 #________________________________________________________________________________________________________________    
 #Eingabe und Umrechnen der gewünschten Größe
-def rechnen(zahl1 = 0, eing = 0):
+def rechnen(zahl1 = 0):
     num1 = False
     #While Schleife wiederholt die Eingabe, bis eine Zahl eingegeben wurde
     while zahl1 == 0:
@@ -56,8 +56,6 @@ def rechnen(zahl1 = 0, eing = 0):
         #Abfrage ob diese Schleife schon einmal durchlaufen worden ist
         if num1 == True:       
             print("Ungülltige Eingabe, bitte Nummer nur Zahlen und maximal einen . eingeben!")
-        else:
-            num1 = True
         #Eingabe der Umzurechnenden Zahl
         eing1 = str(input(f"Bitte {formel1} eingeben:"))
         #Eingabe Überprufen
@@ -74,7 +72,7 @@ def rechnen(zahl1 = 0, eing = 0):
     #Ausgabe des Umgerechneten Ergebnisses        
     print(f"{zahl1}{formel1} = {ergebniss}{formel2}")
     #Pausieren des Programmes um das Ergebnis zu Presentieren
-    ausw3 = input("Drücke Enter um Fortzufahren")
+    input("Drücke Enter um Fortzufahren")
 #________________________________________________________________________________________________________________    
 #Ausführung des Programms als Schleife
 while True:
