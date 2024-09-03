@@ -73,7 +73,7 @@ def rechnen(zahl1 = 0, abfrage3 = False):
 #________________________________________________________________________________________________________________    
 #Ausführung des Programms als Schleife
 while True:
-    #"auswahl1" Aufrufen und in ausw2 als Integer schreiben, zum Rechnen
+    #"menue1" Aufrufen und die Eingabe des Benutzers in ausw2 als Integer schreiben, zum Rechnen
     ausw1 = int(menue1())                   
     #Schleife Beenden, wenn die Nummer 6 "Verlassen" ausgewählt wurde
     if ausw1 == 6:                            
@@ -85,7 +85,7 @@ while True:
     formel2 = formelzeichen[ausw1 + 4]       #Zweites Formelzeichen
     zahl2 = umrechenfaktoren[ausw1 - 1]      #Umrechenfaktor
     
-    #"auswahl2" Aufrufen und in ausw2 schreiben   
+    #"menue2" Aufrufen und die Eingabe des Benutzers in ausw2 schreiben   
     ausw2 = menue2()
     #Drehen der Formelzeichen
     if ausw2 == "2":                          
